@@ -24,4 +24,7 @@
     <listener>
         <listener-class>com.servlet.demo.listener.AppServletContextListener</listener-class>
     </listener>
+    <listener>
+        <listener-class>com.servlet.demo.listener.AppServletContextAttributeListener</listener-class>
+    </listener>
 </web-app>

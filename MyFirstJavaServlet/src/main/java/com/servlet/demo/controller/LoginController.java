@@ -26,7 +26,11 @@ public class LoginController extends HttpServlet {
         String name = request.getParameter("name");
         int age = Integer.parseInt(request.getParameter("age"));
 
+
+        //get value from servletContext
         ServletContext context = request.getServletContext();
+        //set value in servletContext
+        context.setAttribute("name", "马克-to-win");
         DBConnectionManager dbManager = (DBConnectionManager)context.getAttribute("DBManager");
         UserVO userVO = loginService.login(name, dbManager);
         boolean exist = userVO != null;

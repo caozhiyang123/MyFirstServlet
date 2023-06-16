@@ -1,6 +1,10 @@
 package com.servlet.demo.vo;
 
-public class UserVO {
+import javax.servlet.http.HttpSessionActivationListener;
+import javax.servlet.http.HttpSessionEvent;
+import java.io.Serializable;
+
+public class UserVO implements HttpSessionActivationListener, Serializable {
     private String name;
     private long id;
 
@@ -18,5 +22,15 @@ public class UserVO {
 
     public long getId() {
         return id;
+    }
+
+    @Override
+    public void sessionWillPassivate(HttpSessionEvent se) {
+        System.out.println("UserVO will passivate,session id:"+se.getSession().getId());
+    }
+
+    @Override
+    public void sessionDidActivate(HttpSessionEvent se) {
+        System.out.println("UserVO did activate,session id:"+se.getSession().getId());
     }
 }
