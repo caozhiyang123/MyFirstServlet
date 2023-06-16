@@ -1,6 +1,5 @@
 package com.servlet.demo.listener;
 
-import javax.servlet.ServletContext;
 import javax.servlet.ServletContextAttributeEvent;
 import javax.servlet.ServletContextAttributeListener;
 

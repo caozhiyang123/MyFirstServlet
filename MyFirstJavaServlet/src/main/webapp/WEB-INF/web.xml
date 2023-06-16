@@ -27,4 +27,7 @@
     <listener>
         <listener-class>com.servlet.demo.listener.AppServletContextAttributeListener</listener-class>
     </listener>
+    <listener>
+        <listener-class>com.servlet.demo.listener.AppHttpSessionAttributeListener</listener-class>
+    </listener>
 </web-app>
