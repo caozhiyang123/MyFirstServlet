@@ -44,6 +44,9 @@ public class LoginController extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         response.setHeader("Content-Type","text/html;charset=UTF-8");
         response.getWriter().write("你好:"+name+",登录:"+exist);
+
+        //redirect to the special page
+//        response.sendRedirect("/login.jsp");
     }
 
     public void doPost(HttpServletRequest request,HttpServletResponse response) throws IOException{
