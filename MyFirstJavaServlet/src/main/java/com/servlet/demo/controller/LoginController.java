@@ -25,6 +25,7 @@ public class LoginController extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String name = request.getParameter("name");
         int age = Integer.parseInt(request.getParameter("age"));
+        //TODO set servletRequestAttribute
 
         //set session
         HttpSession session = request.getSession();

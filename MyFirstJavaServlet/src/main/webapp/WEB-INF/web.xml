@@ -30,4 +30,7 @@
     <listener>
         <listener-class>com.servlet.demo.listener.AppHttpSessionAttributeListener</listener-class>
     </listener>
+    <listener>
+        <listener-class>com.servlet.demo.listener.AppServletRequestListener</listener-class>
+    </listener>
 </web-app>
