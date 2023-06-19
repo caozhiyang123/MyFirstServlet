@@ -33,4 +33,7 @@
     <listener>
         <listener-class>com.servlet.demo.listener.AppServletRequestListener</listener-class>
     </listener>
+    <listener>
+        <listener-class>com.servlet.demo.listener.AppServletRequestAttributeListener</listener-class>
+    </listener>
 </web-app>
